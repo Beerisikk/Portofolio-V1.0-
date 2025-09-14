@@ -60,7 +60,7 @@
         <i class="fab fa-html5"></i>
         <h3>HTML5</h3>
         <div class="progress-bar-container">
-          <div class="progress-bar-html5" style="width: 50%;">50%</div>
+          <div class="progress-bar" style="width: 50%;">50%</div>
         </div>
         <p>Modern Semantic HTML</p>
       </div>
@@ -68,7 +68,7 @@
         <i class="fab fa-css3-alt"></i>
         <h3>CSS3</h3>
         <div class="progress-bar-container">
-          <div class="progress-bar-html5" style="width: 40%;">40%</div>
+          <div class="progress-bar" style="width: 40%;">40%</div>
         </div>
         <p>Advanced Styling & Animations</p>
       </div>
@@ -76,7 +76,7 @@
         <i class="fab fa-js"></i>
         <h3>JavaScript</h3>
         <div class="progress-bar-container">
-          <div class="progress-bar-html5" style="width: 10%;">10%</div>
+          <div class="progress-bar" style="width: 10%;">10%</div>
         </div>
         <p>Interactive Web Experiences</p>
       </div>
@@ -85,7 +85,7 @@
         <i class="fas fa-paint-brush"></i>
         <h3>UI/UX Design</h3>
         <div class="progress-bar-container">
-          <div class="progress-bar-html5" style="width: 40%;">40%</div>
+          <div class="progress-bar" style="width: 40%;">40%</div>
         </div>
         <p>User-Centered Design</p>
       </div>
@@ -94,14 +94,23 @@
         <h3>Responsive Design</h3>
         <p>Mobile-First Approach</p>
       </div>
+      <div class="skill-item fade-in delay-5">
+       <i class="fa-solid fa-code"></i>
+        <h3>C++</h3>
+         <div class="progress-bar-container">
+          <div class="progress-bar" style="width: 50%;">50%</div>
+        </div>
+        <p>Problem-Solving & Algorithms</p>
+        <P>Object-Oriented Programming</P>
+      </div>
     </div>
   </section>
+<!-- Projects Section -->
+<section class="section" id="projects">
+  <h2 class="section-title fade-in">My Projects</h2>
 
-  <!-- Projects Section -->
-  <section class="section" id="projects">
-    <h2 class="section-title fade-in">My Projects</h2>
+  <div class="projects-wrapper">
     <div class="projects-grid">
-      
       <div class="project-card fade-in delay-1">
         <div class="project-image">
           <i class="fas fa-mobile-alt"></i>
@@ -109,21 +118,49 @@
         <div class="project-content">
           <h3>Mobile App UI</h3>
           <p>Desain antarmuka pengguna untuk aplikasi mobile dengan fokus pada pengalaman pengguna.</p>
-            <a href="http://127.0.0.1:5500/DAY%2009/index.html" target="_blank"><button id="cp-button" style="color:rgb(255, 255, 255);font-weight: bold; border-radius: 10px; width: 120px; height: 40px; cursor:pointer; background-color: #b200ff; border: none; font-size: 15px;;">CLICK HERE!</button></a>
+          <a href="http://127.0.0.1:5500/DAY%2009/index.html" target="_blank">
+            <button id="cp-button"
+              style="color:rgb(255, 255, 255);font-weight: bold; border-radius: 10px; width: 120px; height: 40px; cursor:pointer; background-color: #b200ff; border: none; font-size: 15px; margin-top: 3rem;">
+              CLICK HERE!
+            </button>
+          </a>
         </div>
       </div>
+
       <div class="project-card fade-in delay-2">
         <div class="project-image">
           <i class="fas fa-palette"></i>
         </div>
         <div class="project-content">
           <h3>Creative Portfolio</h3>
-          <p>Portfolio interaktif dengan animasi dan efek visual yang menarik dan memukau.</p>
-          <a href="http://127.0.0.1:5500/DAY%2009/index.html" target="_blank"><button id="cp-button" style="color:rgb(255, 255, 255);font-weight: bold; border-radius: 10px; width: 120px; height: 40px; cursor:pointer; background-color: #b200ff; border: none; font-size: 15px;;">CLICK HERE!</button></a>
+          <p>Portfolio interaktif dengan animasi dan efek visual yang menarik dan memukau serta serasi.</p>
+          <a href="http://127.0.0.1:5500/DAY%2009/index.html" target="_blank">
+            <button id="cp-button" class="btn"
+              style="color:rgb(255, 255, 255);font-weight: bold; border-radius: 10px; width: 120px; height: 40px; cursor:pointer; background-color: #b200ff; border: none; font-size: 15px; margin-top: 3rem;">
+              CLICK HERE!
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in delay-3">
+        <div class="project-image">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="project-content">
+          <h3>Web Development</h3>
+          <p>Pengembangan website modern dengan performa tinggi dan desain responsif serta cemerlang.</p>
+          <a href="http://127.0.0.1:5500/DAY%2009/index.html" target="_blank">
+            <button id="cp-button"
+              style="color:rgb(255, 255, 255);font-weight: bold; border-radius: 10px; width: 120px; height: 40px; cursor:pointer; background-color: #b200ff; border: none; font-size: 15px; margin-top: 3rem;">
+              CLICK HERE!
+            </button>
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section class="section" id="contact">
@@ -188,6 +225,5 @@
     </div>
   </footer>
 <script src="main.js"></script>
-  
 </body>
 </html>
