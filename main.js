@@ -95,3 +95,29 @@
     observer.observe(element);
   });
 });
+
+
+  const grid = document.querySelector(".projects-grid");
+  const cards = document.querySelectorAll(".project-card");
+
+  let index = 0;
+
+  function updateCarousel() {
+    cards.forEach(card => card.classList.remove("active"));
+    cards[index].classList.add("active");
+
+    const cardWidth = cards[0].offsetWidth + 40; // lebar card + margin
+    const centerOffset = (grid.parentElement.offsetWidth / 2) - (cards[0].offsetWidth / 2);
+
+    const moveX = -(index * cardWidth) + centerOffset;
+    grid.style.transform = `translateX(${moveX}px)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % cards.length;
+    updateCarousel();
+  }
+
+  setInterval(nextSlide, 3000); // auto ganti tiap 3 detik
+  window.addEventListener("resize", updateCarousel);
+  updateCarousel();
